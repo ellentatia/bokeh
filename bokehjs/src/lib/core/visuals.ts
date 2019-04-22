@@ -78,11 +78,26 @@ function create_hatch_canvas(hatch_pattern: string, hatch_color: string, hatch_n
         ctx.moveTo(3*h4+0.5, h)
         ctx.lineTo(5*h4+0.5, 0)
         ctx.stroke()
-        // ctx.moveTo(h4+0.5, 3*h4+0.5)
-        // ctx.lineTo(3*h4+0.5, h4+0.5)
         ctx.stroke()
         break
-      case "\\":
+        case "\\":
+        ctx.moveTo(h4+0.5, h)
+        ctx.lineTo(-h4+0.5, 0)
+        ctx.stroke()
+        ctx.moveTo(3*h4+0.5, h)
+        ctx.lineTo(h4+0.5, 0)
+        ctx.stroke()
+        ctx.moveTo(5*h4+0.5, h)
+        ctx.lineTo(3*h4+0.5, 0)
+        ctx.stroke()
+        ctx.stroke()
+        break
+      case ",":
+        ctx.moveTo(h4+0.5, 3*h4+0.5)
+        ctx.lineTo(3*h4+0.5, h4+0.5)
+        ctx.stroke()
+        break
+      case "`":
         ctx.moveTo(h4+0.5, h4+0.5)
         ctx.lineTo(3*h4+0.5, 3*h4+0.5)
         ctx.stroke()

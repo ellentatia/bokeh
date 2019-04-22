@@ -252,7 +252,7 @@ Direction = enumeration("clock", "anticlock")
 FontStyle = enumeration("normal", "italic", "bold", "bold italic")
 
 #: Specify one of the built-in patterns for hatching fills
-HatchPattern = enumeration(*list(".o+-|/\Xv>*"))
+HatchPattern = enumeration(*list(".o+-|/\X`,v>*"))
 
 #: Specify whether events should be combined or collected as-is when a Document hold is in effect
 HoldPolicy = enumeration("combine", "collect")
